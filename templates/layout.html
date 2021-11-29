@@ -1,0 +1,37 @@
+
+<!doctype html>
+<html lang="en">
+
+{% block head %}
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/static/css/estilo.css"/>
+    <title>{% block titulo %}Pagina principal{% endblock %}</title>
+
+</head>
+{% endblock %}
+
+{% block body %}
+
+<body>
+    {% block encabezado %}
+    <h2><img src="/static/imagen/pleca_tecnm.jpg" width="150" height="110"> Tcnm </h2>
+    {% endblock %}
+
+ <form action="/crearnota" methods="post">
+  <label for>"Titulo de la nota:"</label>
+  <br>
+  <input type="text" id="campotitulo" name="campotitulo" value="">
+  <br>
+  <label for="cuerpo">Cuerpo de la nota:</label>
+  <br>
+  <input type="text" id="campocuerpo" name="campocuerpo" value="">
+  <input type="submit" value="Crear Nota">
+</form>
+
+    {% block pie %}
+    {% endblock %}
+
+</body>
+{% endblock %}
+</html>

@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block titulo %} Pagina principal {% endblock %}
+
+{% block contenido %}
+<h1>Es el contenido</h1>
+<p>Hola mundo</p>
+<h>Bienvenido </h>
+{% for nombre in variable %}
+  <p>{{nombre}}</p>
+  {% endfor %}
+{% endblock %}
+
+{% block pie %}
+<h1>Es el pie de pagina</h1>
+<p>Animo!!!</p>
+{% endblock %}
+
